@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    kubernetes:
+      config:
+        enabled: true
+        name: standard-dependency-spring-kube-config-demo
+        namespace: default
+        fail-fast: true

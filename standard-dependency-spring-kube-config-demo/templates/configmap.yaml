@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: standard-dependency-spring-kube-config-demo
+data:
+  application.properties: |-
+    beanx.message=FROM CONFIGMAP ! Message from backend is: %s <br/> Services : %s

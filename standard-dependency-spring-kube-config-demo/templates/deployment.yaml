@@ -1,0 +1,35 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: standard-dependency-spring-kube-config-demo
+spec:
+  selector:
+    app: standard-dependency-spring-kube-config-demo
+  ports:
+    - protocol: TCP
+      port: 9091
+      nodePort: 30084
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: standard-dependency-spring-kube-config-demo
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: standard-dependency-spring-kube-config-demo
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: standard-dependency-spring-kube-config-demo
+    spec:
+      serviceAccountName: standard-dependency-spring-kube-config-demo-sa
+      containers:
+        - name: standard-dependency-spring-kube-config-demo
+          image: standard-dependency-spring-kube-config-demo:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 9091
