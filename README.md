@@ -10,7 +10,7 @@ these approaches are using Spring boot version 2.4.3.
 Module Name|Description|
 -----------|-----------|
 [custom-dependency-spring-kube-config-demo](custom-dependency-spring-kube-config-demo/)|Built using manual selection of Spring Cloud Kubernetes ConfigMap related dependencies that are compatible with Spring Boot 2.4.3|
-[standard-dependency-spring-kube-config-demo](standard-dependency-spring-kube-config-demo)|Built using preferred dependency matrix for Spring Boot 2.4.3 to setup Spring Cloud Kubernetes ConfigMap related dependencies|
+[standard-dependency-spring-kube-config-demo](standard-dependency-spring-kube-config-demo/)|Built using preferred dependency matrix for Spring Boot 2.4.3 to setup Spring Cloud Kubernetes ConfigMap related dependencies|
 
 
 ## Deployment Prerequisites

@@ -4,8 +4,5 @@ metadata:
   name: custom-dependency-spring-kube-config-demo
 data:
   application.yaml: |-
-    beanx:
-      message: "Testing reload ! Message from backend is: %s <br/> Services : %s"
-    server:
-      ssl:
-        enabled: false
+    bean:
+      message: "Hello from custom-configured config-map"

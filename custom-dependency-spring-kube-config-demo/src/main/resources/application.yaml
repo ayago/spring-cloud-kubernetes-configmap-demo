@@ -1,18 +1,6 @@
-spring:
-  application:
-    name: custom-dependency-spring-kube-config-demo
-
 server:
   port: 9090
-  ssl:
-    enabled-protocols: [TLSv1.2]
 
 logging:
   level:
     root: INFO
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
